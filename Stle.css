@@ -1,0 +1,44 @@
+body{
+    background: url(bk.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.banner{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+}
+ .banner .product{
+
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left:0px;
+display: flex;
+
+ }
+
+ .banner .product .soda{
+    background: 
+     var(--url) var(--left) 0,
+    url("freepik-export-20241101060024SRMa.png");
+background-size: auto 100%;
+width: 225px; 
+aspect-ratio: 2/5.1;
+background-blend-mode: multiply;
+mask-image: url("freepik-export-20241101060024SRMa.png");
+mask-size: auto 100%;
+transition: 0.7s;
+position: absolute;
+
+}
+.banner .product:hover{
+    --left:-1000px;
+    transform: translateX(-50%) translateY(-50px);
+}
